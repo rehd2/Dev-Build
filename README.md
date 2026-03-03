@@ -14,6 +14,7 @@ Provides a stable base you can reuse for multiple projects, and that can be easi
 
 ## Whats included in this project?
 
+```
 ├── @expo/vector-icons@15.1.1
 ├── @react-native-async-storage/async-storage@2.2.0
 ├── @react-native-firebase/app@23.8.6
@@ -67,6 +68,7 @@ Provides a stable base you can reuse for multiple projects, and that can be easi
 ├── react-native@0.81.5
 ├── react@19.1.0
 └── typescript@5.9.3
+```
 
 ## Installation and usage
 
