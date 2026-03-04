@@ -11,16 +11,6 @@
     "ios": {
       "supportsTablet": true
     },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
-    },
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
@@ -35,7 +25,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#ffffff"
           }
         }
       ],
@@ -44,7 +34,17 @@
     ],
     "experiments": {
       "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": true,
+      "insights": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5927fc50-e07f-4e50-bd7a-d21f9bb014f6"
+      }
+    },
+    "android": {
+      "package": "com.rehd.devBuild"
     }
   }
 }

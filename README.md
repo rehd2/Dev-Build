@@ -1,95 +1,191 @@
-# Welcome to custom expo dev Build
+<div align="center">
+  <img src="./assets/images/icon.png" alt="Dev Build Logo" width="200" />
+  <h1>Dev Build</h1>
+  <p><strong>A Reusable Expo Development Client for React Native Projects</strong></p>
+</div>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app) with --template defaiult .
-This not an app project, but can be excuted with the default `npx expo start command`
+---
 
-# NOTE: The UI is still the same template you'd get with the [`create-expo-app`](https://www.npmjs.com/package/create-expo-app)
+## 📋 Overview
 
-This project is designed to save the time and much work when creating mobile apps that use libraries that needs native code,
-This project works just like the expo dev client you'd create with `expo prebuild` and `expo run:android` or `expo run:ios` but without the need to run those commands every time you want to test your app per project everytime.
+**Dev Build** is a pre-configured [Expo](https://expo.dev) development client that streamlines mobile app development with React Native. Instead of rebuilding your dev client every time you add a native library, this project provides a stable, feature-rich foundation that works across multiple projects.
 
-# The main idea is to have a single expo dev client that can be used across multiple projects, and that can be easily updated with new libraries and features without the need to create a new dev client every time.
+### ✨ Key Benefits
 
-Provides a stable base you can reuse for multiple projects, and that can be easily updated with new libraries and features without the need to create a new dev client every time.
+- **One-time Setup**: Build once, use across multiple projects
+- **Pre-configured Libraries**: Includes 50+ essential packages for modern React Native development
+- **Native Code Support**: Ready for libraries that require native modules
+- **Easy Updates**: Simply run `expo prebuild` after adding new dependencies
+- **Time Saver**: Eliminate repetitive builds with `expo prebuild` and `expo run:android/ios`
 
-## Whats included in this project?
+---
 
-```
-├── @expo/vector-icons@15.1.1
-├── @react-native-async-storage/async-storage@2.2.0
-├── @react-native-firebase/app@23.8.6
-├── @react-native-firebase/auth@23.8.6
-├── @react-native-firebase/firestore@23.8.6
-├── @react-native-firebase/messaging@23.8.6
-├── @react-native-firebase/storage@23.8.6
-├── @react-navigation/bottom-tabs@7.15.3
-├── @react-navigation/elements@2.9.8
-├── @react-navigation/native@7.1.31
-├── @shopify/flash-list@2.2.2
-├── @supabase/supabase-js@2.98.0
-├── @types/react@19.1.17
-├── axios@1.13.6
-├── dayjs@1.11.19
-├── eslint-config-expo@10.0.0
-├── eslint@9.39.3
-├── expo-av@16.0.8
-├── expo-blur@15.0.8
-├── expo-camera@17.0.10
-├── expo-constants@18.0.13
-├── expo-dev-client@6.0.20
-├── expo-file-system@19.0.21
-├── expo-font@14.0.11
-├── expo-haptics@15.0.8
-├── expo-image-picker@17.0.10
-├── expo-image@3.0.11
-├── expo-linear-gradient@15.0.8
-├── expo-linking@8.0.11
-├── expo-network@8.0.8
-├── expo-notifications@0.32.16
-├── expo-router@6.0.23
-├── expo-secure-store@15.0.8
-├── expo-sharing@14.0.8
-├── expo-splash-screen@31.0.13
-├── expo-sqlite@16.0.10
-├── expo-status-bar@3.0.9
-├── expo-symbols@1.0.8
-├── expo-system-ui@6.0.9
-├── expo-web-browser@15.0.10
-├── expo@54.0.33
-├── nativewind@4.2.2
-├── react-dom@19.1.0
-├── react-native-gesture-handler@2.28.0
-├── react-native-reanimated@4.1.6
-├── react-native-safe-area-context@5.6.2
-├── react-native-screens@4.16.0
-├── react-native-svg@15.12.1
-├── react-native-web@0.21.2
-├── react-native-worklets@0.5.1
-├── react-native@0.81.5
-├── react@19.1.0
-└── typescript@5.9.3
-```
+## 📦 What's Included
 
-## Installation and usage
+This project comes pre-configured with a comprehensive set of libraries for building modern mobile applications:
 
-1. Clone this repository
-   `git clone https://github.com/rehd2/Dev-Build.git`
+### Core Framework
 
-2. Install dependencies
-   `npm install` or `yarn install`
+- **Expo** (`54.0.33`) - React Native framework with managed workflow
+- **React** (`19.1.0`) & **React Native** (`0.81.5`)
+- **TypeScript** (`5.9.3`) - Type-safe development
+- **Expo Router** (`6.0.23`) - File-based routing
 
-3. Build the development client
-   `npx expo prebuild`
+### Navigation & UI
 
-4. Run the development client on your desired platform
+- `@react-navigation/*` - Powerful navigation library
+- `@shopify/flash-list` - High-performance list component
+- `nativewind` - Tailwind CSS for React Native
+- `react-native-reanimated` - Smooth animations
 
-- For Android: `npx expo run:android`
-- For iOS: `npx expo run:ios`
+### Storage & Backend
 
-5. Start the development server
-   `npx expo start`
+- `@react-native-firebase/*` - Firebase integration (Auth, Firestore, Storage, Messaging)
+- `@supabase/supabase-js` - Supabase backend client
+- `@react-native-async-storage/async-storage` - Local data persistence
+- `expo-sqlite` - Local SQLite database
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Device & Media
+
+- `expo-camera` - Camera access
+- `expo-image-picker` - Image selection
+- `expo-file-system` - File system access
+- `expo-av` - Audio & video playback
+- `expo-notifications` - Push notifications
+
+### Utilities & Tools
+
+- `axios` - HTTP client
+- `dayjs` - Date manipulation
+- `expo-haptics` - Haptic feedback
+- `react-native-svg` - SVG rendering
+- `@expo/vector-icons` - Icon library
+
+### Development Tools
+
+- `expo-dev-client` - Custom development client
+- `eslint` - Code linting
+- `expo-updates` - Over-the-air updates support
+
+### All
+
+For a complete list of included libraries and their versions, see the [package.json](./package.json) file.
+
+---
+
+## 🚀 Getting Started
+
+### Option 1: Download Pre-built Binary
+
+Download the compiled dev build from the [Releases](../../releases) page and install it on your device.
+
+### Option 2: Build Locally
+
+#### Prerequisites
+
+- Node.js 16+ and npm/yarn installed
+- Xcode (for iOS) or Android Studio (for Android) or your device
+- Git
+
+#### Installation Steps
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/rehd2/Dev-Build.git
+    cd Dev-Build
+    ```
+
+2. **Install dependencies**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3. **Generate native code**
+
+    ```bash
+    npx expo prebuild
+    ```
+
+4. **Build for your platform**
+    - **Android**:
+        ```bash
+        npx expo run:android
+        ```
+    - **iOS**:
+        ```bash
+        npx expo run:ios
+        ```
+    - **Cloud Build**:
+        ```bash
+        npx eas build --profile development --platform ( all | android | ios )
+        ```
+
+5. **Start the development server**
+    ```bash
+    npx expo start
+    ```
+
+---
+
+## 📝 Usage
+
+Once built, you can use this dev client with any Expo project:
+
+1. Set your Expo project to use this dev client
+2. Run `npx expo start` in your project
+3. Scan the QR code with the dev client app
+
+The dev client will reload your app as you make changes to your code.
+
+---
+
+## 🔧 Adding New Dependencies
+
+To add a new native library to this dev client:
+
+1. Install the package
+
+    ```bash
+    npm install <package-name>
+    ```
+
+2. Regenerate native code
+
+    ```bash
+    npx expo prebuild --clean
+    ```
+
+3. Rebuild the dev client
+    ```bash
+    npx expo run:android  # or run:ios
+    ```
+
+---
+
+## 📚 Resources
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
+- [Expo Dev Client Guide](https://docs.expo.dev/develop/development-builds/introduction/)
+
+---
+
+## 📄 License
+
+This project is open source. See the LICENSE file for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests to improve this project.
+
+---
+
+<div align="center">
+  <strong>Made with ❤️ for the React Native community</strong>
+</div>
